@@ -4,7 +4,7 @@ const Header = () => {
 	return (
 		<Fragment>
 			<div>bean there</div>
-			<h1>ciao</h1>
+			<h1>ciao amici</h1>
 			
 			<hr />
 		</Fragment>
