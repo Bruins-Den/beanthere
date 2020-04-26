@@ -1,17 +1,14 @@
 import React, { useState, useEffect, Fragment } from 'react';
 
 import Header from '../../components/Header';
-import mockData from '../../../mock_data/index';
+import Card from '../../components/Card';
+import mockData from '../../../mock_data';
 
 const tempStyles = {
 	searchStyle: {
 		width: '300px',
 		border: '2px solid gray',
 		height: '40px',
-	},
-	postStyle: {
-		border: '2px solid brown',
-		margin: '10px auto',
 	},
 	buttonStyle: {
 		textAlign: 'right',
@@ -36,14 +33,9 @@ const Main = () => {
 				></input>
 			</div>
 			<div>
-				{posts.map((post, i) => {
-					return (
-						<div key={i} style={tempStyles.postStyle}>
-							<div>User : {post.userName}</div>
-							<div>Title : {post.title}</div>
-						</div>
-					);
-				})}
+				{posts.map((post, i) => (
+					<Card key={i} post={post} />
+				))}
 			</div>
 			<div style={tempStyles.buttonStyle}>
 				<button>create</button>
