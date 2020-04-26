@@ -1,11 +1,17 @@
 import React, { Fragment } from 'react';
-
+import './style.css';
 const Header = () => {
 	return (
 		<Fragment>
-			<div>bean there</div>
-			<h1>ciao amici</h1>
-			
+			<header className = "header">
+			<nav className = "headerMenu">
+				<a href ="#">bean there</a>
+				<a href ="#">bean good</a>
+				<a href ="#">have you bean?</a>
+				<a href ="#">about</a>
+				<a href ="#">log in</a>
+			</nav>
+			</header>
 			<hr />
 		</Fragment>
 	);
