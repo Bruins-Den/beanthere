@@ -14,7 +14,8 @@
 		"testEnvironment": "node"
 	},
 	"dependencies": {
-		"express": "^4.17.1"
+		"express": "^4.17.1",
+		"express-static-gzip": "^2.0.6"
 	},
 	"devDependencies": {
 		"jest": "^25.4.0",
