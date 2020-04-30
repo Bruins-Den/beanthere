@@ -5,11 +5,6 @@ import Card from '../../components/Card';
 import mockData from '../../../mock_data';
 
 const tempStyles = {
-	searchStyle: {
-		width: '300px',
-		border: '2px solid gray',
-		height: '40px',
-	},
 	buttonStyle: {
 		textAlign: 'right',
 	},
@@ -25,13 +20,6 @@ const Main = () => {
 	return (
 		<Fragment>
 			<Header />
-			<div>
-				<input
-					type='search'
-					placeholder='search'
-					style={tempStyles.searchStyle}
-				></input>
-			</div>
 			<div>
 				{posts.map((post, i) => (
 					<Card key={i} post={post} />
