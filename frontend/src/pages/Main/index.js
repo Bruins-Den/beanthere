@@ -5,12 +5,20 @@ import Card from '../../components/Card';
 import mockData from '../../../mock_data';
 
 const tempStyles = {
-	buttonStyle: {
+	searchStyle: {
+		width: '300px',
+		border: '2px solid gray',
+		height: '40px',
+	},
+	buttonDivStyle: {
 		textAlign: 'right',
+	},
+	buttonStyle: {
+		cursor: 'pointer',
 	},
 };
 
-const Main = () => {
+const Main = ({ setView, setData }) => {
 	const [posts, setPosts] = useState([]);
 
 	useEffect(() => {
@@ -22,11 +30,21 @@ const Main = () => {
 			<Header />
 			<div>
 				{posts.map((post, i) => (
-					<Card key={i} post={post} />
+					<Card
+						key={i}
+						post={post}
+						setView={setView}
+						setData={setData}
+					/>
 				))}
 			</div>
-			<div style={tempStyles.buttonStyle}>
-				<button>create</button>
+			<div style={tempStyles.buttonDivStyle}>
+				<button
+					onClick={() => setView('create')}
+					style={tempStyles.buttonStyle}
+				>
+					create
+				</button>
 			</div>
 		</Fragment>
 	);
