@@ -1,4 +1,4 @@
-export default [
+let defaultData = [
 	{
 		userName: 'james',
 		title: 'my recent experience with Starbucks',
@@ -35,3 +35,10 @@ export default [
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sin aliud quid voles, postea. Haec para/doca illi, nos admirabilia dicamus. Easdemne res? Nunc de hominis summo bono quaeritur; Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse;',
 	},
 ];
+
+export function addMockData(data) {
+	defaultData = [data, ...defaultData];
+	return defaultData;
+}
+
+export default defaultData;

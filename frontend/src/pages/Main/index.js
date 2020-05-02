@@ -1,8 +1,7 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { Fragment } from 'react';
 
 import Header from '../../components/Header';
 import Card from '../../components/Card';
-import mockData from '../../../mock_data';
 
 const tempStyles = {
 	searchStyle: {
@@ -18,13 +17,7 @@ const tempStyles = {
 	},
 };
 
-const Main = ({ setView, setData }) => {
-	const [posts, setPosts] = useState([]);
-
-	useEffect(() => {
-		setPosts(mockData);
-	}, [mockData]);
-
+const Main = ({ posts, setView, setSelectedPost }) => {
 	return (
 		<Fragment>
 			<Header />
@@ -34,7 +27,7 @@ const Main = ({ setView, setData }) => {
 						key={i}
 						post={post}
 						setView={setView}
-						setData={setData}
+						setSelectedPost={setSelectedPost}
 					/>
 				))}
 			</div>
