@@ -5,8 +5,9 @@ const buttonStyle = {
 	cursor: 'pointer',
 };
 
-const Detail = ({ setView, data }) => {
-	const { userName, title, data: body } = data;
+const Detail = ({ setView, selectedPost }) => {
+	console.log('<Detail /> render');
+	const { userName, title, data: body } = selectedPost;
 	return (
 		<Fragment>
 			<Header />
