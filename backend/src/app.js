@@ -24,7 +24,7 @@ app.get('/api/getlist/mockdata', (req, res) => {
 });
 
 app.get('/api/getitem/mockdata', (req, res) => {
-	let item_data = mockData.find(c => c.id === parseInt(req.query.id));
+	let item_data = mockData.find(c => c.userName === req.query.name);
 
 	if (item_data) {
 		res.status(200).send(item_data);
