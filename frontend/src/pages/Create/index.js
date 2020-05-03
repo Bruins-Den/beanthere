@@ -15,6 +15,7 @@ const defaultForm = {
 };
 
 const Create = ({ setView, setPosts }) => {
+	console.log('<Create /> render');
 	const [form, setForm] = useState(defaultForm);
 
 	const handleInputChange = (e) => {

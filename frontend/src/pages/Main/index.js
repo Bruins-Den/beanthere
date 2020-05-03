@@ -18,6 +18,7 @@ const tempStyles = {
 };
 
 const Main = ({ posts, setView, setSelectedPost }) => {
+	console.log('<Main /> render');
 	return (
 		<Fragment>
 			<Header />
