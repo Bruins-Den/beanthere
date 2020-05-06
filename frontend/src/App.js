@@ -4,6 +4,7 @@ import Main from './pages/Main';
 import Detail from './pages/Detail';
 import Create from './pages/Create';
 import mockData from '../mock_data';
+import mockThread from '../mock_Thread';
 
 const App = () => {
 	/*
@@ -45,7 +46,8 @@ const App = () => {
 	useEffect(() => {
 		console.log('<App /> useEffect triggered');
 		setPosts(mockData);
-	}, [mockData]);
+	}, [mockData]
+		);
 
 	const viewController = () => {
 		console.log('<App /> render');
