@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 
 import Header from '../../components/Header';
-import SideBar from '../../components/SideBar';
 import Card from '../../components/Card';
 
 import styled from 'styled-components';
@@ -84,10 +83,10 @@ const Main = ({ posts, setView, setSelectedPost }) => {
 			</ThreadGrid>
 			<ThreadGrid2>
 				<ThreadTitle>Weekly Thread</ThreadTitle>
-				<p2>Princeps huius civitatis Phalereus Demetrius cum patria pulsus esset iniuria, 
+				<p>Princeps huius civitatis Phalereus Demetrius cum patria pulsus esset iniuria, 
 					ad Ptolomaeum se regem Alexandream contulit. Verum hoc loco sumo verbis his 
 					eandem certe vim voluptatis Epicurum nosse quam ceteros. Avaritiamne minuis? 
-					Duo enim genera quae erant, fecit tria.</p2>	
+					Duo enim genera quae erant, fecit tria.</p>	
 			</ThreadGrid2>
 			
 			<PostGrid>
