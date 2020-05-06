@@ -1,9 +1,23 @@
 import React, { Fragment } from 'react';
 import Header from '../../components/Header';
+import styled from 'styled-components';
 
-const buttonStyle = {
-	cursor: 'pointer',
-};
+const ButtonStyles = styled.button`
+
+		text-align: right;
+		float:right;
+		cursor: pointer;
+		border: 2px solid #383287;
+		text-decoration: none;
+		padding: 8px 20px;
+		background-color: #f3e3db;
+		font-family:Karla;
+		font-size:14px;
+		&:hover{
+			border-color:#d85235;
+			color:#d85235;
+		}
+`
 
 const Detail = ({ setView, selectedPost }) => {
 	console.log('<Detail /> render');
@@ -11,10 +25,10 @@ const Detail = ({ setView, selectedPost }) => {
 	return (
 		<Fragment>
 			<Header />
-			<div>Detail Page</div>
-			<button onClick={() => setView('main')} style={buttonStyle}>
+			<ButtonStyles 
+				onClick={() => setView('main')}>
 				Back
-			</button>
+			</ButtonStyles>
 			<section>
 				<div>User : {userName}</div>
 				<div>Title : {title}</div>

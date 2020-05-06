@@ -3,6 +3,8 @@ import React, { Fragment, useState } from 'react';
 import Header from '../../components/Header';
 import { addMockData } from '../../../mock_data';
 
+import styled from 'styled-components';
+
 const buttonStyle = {
 	cursor: 'pointer',
 };
@@ -41,7 +43,7 @@ const Create = ({ setView, setPosts }) => {
 			<button onClick={() => setView('main')} style={buttonStyle}>
 				Back
 			</button>
-			<hr />
+	
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='userName'>User : </label>
 				<input
@@ -81,7 +83,7 @@ const Create = ({ setView, setPosts }) => {
 					onChange={handleInputChange}
 				/>
 				<br />
-				<hr />
+				
 				<input type='submit' />
 			</form>
 		</Fragment>
