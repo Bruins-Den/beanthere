@@ -3,69 +3,13 @@ import React, { Fragment } from 'react';
 import Header from '../../components/Header';
 import Card from '../../components/Card';
 
-import styled from 'styled-components';
+import { GridContainer } from './styled.js';
+import { PostGrid } from './styled.js';
+import { ThreadGrid } from './styled.js';
+import { ThreadGrid2 } from './styled.js';
+import { ThreadTitle } from './styled.js';
+import { ButtonStyles } from './styled.js';
 
-
-const GridContainer = styled.div`
-		display:grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-areas:
-		    "Header Header Header"
-			"postGrid postGrid threadGrid"
-			"postGrid postGrid threadGrid"
-			"postGrid postGrid threadGrid2"
-			"postGrid postGrid threadGrid2";
-
-		grid-gap: 0.2rem;
-	
-`
-
-const PostGrid = styled.div`
-		grid-area:postGrid;
-`
-const ThreadGrid = styled.div`
-		grid-area:threadGrid;
-		border: 2px solid #383287;
-		postion: relative;
-		padding: 15px;
-		margin: 10px;
-		text-align:left;
-		font-family:Karla;
-		font-size:14px;
-`
-const ThreadGrid2 = styled.div`
-		grid-area:threadGrid2;
-		border: 2px solid #383287;
-		postion: relative;
-		padding: 15px;
-		margin: 10px;
-		text-align:left;
-		font-family:Karla;
-		font-size:14px;
-`
-const ThreadTitle = styled.h1`
-		font-family:Crimson Pro;
-		font-size:18px;
-		font-weight:bold;
-		color:#383287;
-`
-
-const ButtonStyles = styled.button`
-  
-		text-align: right;
-		float:right;
-		cursor: pointer;
-		border: 2px solid #383287;
-		text-decoration: none;
-		padding: 8px 20px;
-		background-color: #f3e3db;
-		font-family:Karla;
-		font-size:14px;
-		&:hover{
-			border-color:#d85235;
-			color:#d85235;
-		}
-`
 
 const Main = ({ posts, setView, setSelectedPost }) => {
 	console.log('<Main /> render');
@@ -74,6 +18,7 @@ const Main = ({ posts, setView, setSelectedPost }) => {
 		<Fragment>
 			<Header />
 			<GridContainer>
+			
 			<ThreadGrid>
 				<ThreadTitle>Weekly Thread</ThreadTitle>
 				<p>Princeps huius civitatis Phalereus Demetrius cum patria pulsus esset iniuria, 
