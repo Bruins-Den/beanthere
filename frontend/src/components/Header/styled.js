@@ -31,7 +31,7 @@ align-items: left;
         position:relative;
         z-index:1;
         text-align: center;
-        color:#383287;
+        color:#72b0bd;
         background-size: 200% 100%;
         background-position: -100%;
         transition: all 0.3s ease-in-out;
@@ -63,7 +63,7 @@ align-items: left;
 .logo{
     font-size:35px;
     font-weight: bold;
-    color: #383287;
+    color:#72b0bd;
     float: left;
     padding: 10px;
     font-family: Crimson Pro;
@@ -75,10 +75,8 @@ align-items: left;
 
 .logo a {
     text-decoration: none;
-    color:#383287;
-    &:hover{
-        color:#d85235;
-    }
+    color:#72b0bd;
+   
 }
 #searchbar{
     position:flex;
@@ -132,7 +130,7 @@ align-items: left;
         position: absolute;
         top: 0;
         left: 0;
-        color: #383287;
+        color: #72b0bd;
         text-align: left;
         font-size: 1.2em;
         transition: all 1s ease;
@@ -152,5 +150,70 @@ align-items: left;
         transition: all 0.2s ease;
     }
 }
+`
+
+export const SideBar = styled.div`
+	
+#Menu {
+    font-family: 'Karla';
+    height: 100vh;
+  }
+  
+  #page-wrap {
+    text-align: center;
+    overflow: auto;
+  }
+  
+
+  .bm-item {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+
+  .bm-item:hover {
+    color: white;
+  }
+  
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+  .bm-burger-bars {
+    background: #373a47;
+  }
+
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
 `;
 

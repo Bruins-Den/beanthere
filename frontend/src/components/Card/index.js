@@ -5,10 +5,12 @@ import styled from 'styled-components';
 const CardWrapper = styled.div`
 	postion: absolute;
 	left:0px;
-    border: 2px solid #383287;
+	border-top: 0.5px solid #72b0bd;
 	padding: 15px;
-	margin: 10px;
 	max-width: 850px;
+	&:hover{
+		color:#d9d9d9;
+	}
 `
 const cardStyle = {
 	fontSize: '14px',
