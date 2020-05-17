@@ -7,10 +7,10 @@ const ButtonStyles = styled.button`
 		text-align: right;
 		float:right;
 		cursor: pointer;
-		border: 2px solid #383287;
+		border: 2px solid #72b0bd;
 		text-decoration: none;
 		padding: 8px 20px;
-		background-color: #f3e3db;
+		background-color: #fff;
 		font-family:Karla;
 		font-size:14px;
 		&:hover{

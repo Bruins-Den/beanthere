@@ -1,10 +1,16 @@
 import React, { Fragment } from 'react';
-import { NavBar } from './styled.js';
-import Icon from './icon';
+import SideBar from "./sidebar.js";
+
 
 const Header = () => {
 	return (
 		<Fragment>
+	
+		<div id="Menu">
+           <SideBar pageWrapId={GridContainer} outerContainerId={"Menu"} />
+		</div>
+
+			{/*
 			<NavBar>
 			    <div className = "logo"><a href ="home">bean there</a></div>
 				
@@ -15,17 +21,9 @@ const Header = () => {
 				<li><a href ="log in">log in</a></li>
 				</ul>
 
-				<div className = "searchBar" id="searchbar">
-				<form action="">
-					<input
-						type='search'
-					></input>
-					<div className = "coffeeIcon">
-						<Icon name = "coffeemug" width={25} fill='#383287'/>
-					</div>
-				</form>
-				</div>
+				
 			</NavBar>
+			*/}
 			
 		</Fragment>
 	);
